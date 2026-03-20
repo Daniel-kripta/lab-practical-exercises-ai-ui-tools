@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusVar - Cursos Online</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="CampusVar, inicio">
+          <span class="brand-mark" aria-hidden="true">CV</span>
+          <span class="brand-name">CampusVar</span>
+        </a>
+
+        <!-- Menú móvil: desplegable con CSS (sin JS) -->
+        <div class="nav-mobile">
+          <input
+            class="nav-toggle"
+            type="checkbox"
+            id="nav-toggle"
+            aria-label="Abrir o cerrar menú"
+          />
+          <label class="nav-button" for="nav-toggle" aria-hidden="true">
+            <span class="nav-button-lines"></span>
+          </label>
+
+          <nav class="nav-menu" aria-label="Navegación principal">
+            <a class="nav-link" href="#cursos">Cursos</a>
+            <a class="nav-link" href="#temas">Temas</a>
+            <a class="nav-link" href="#caracteristicas">Características</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </nav>
+        </div>
+
+        <!-- Menú de escritorio: siempre visible -->
+        <nav class="nav-desktop" aria-label="Navegación principal">
+          <a class="nav-link" href="#cursos">Cursos</a>
+          <a class="nav-link" href="#temas">Temas</a>
+          <a class="nav-link" href="#caracteristicas">Características</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" aria-label="Presentación">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="hero-kicker">Aprende con rutas, retos y proyectos en CampusVar</p>
+            <h1 class="hero-title">
+              Tu tienda de cursos online
+              <br>de
+              <span class="hero-title-em">temas variados</span>.
+            </h1>
+            <p class="hero-description">
+              Desde programación y diseño hasta productividad y nuevas habilidades.
+              Aprende a tu ritmo con acceso inmediato y contenidos pensados para practicar.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#cursos">Explorar cursos</a>
+              <a class="btn btn-ghost" href="#caracteristicas">Ver ventajas</a>
+            </div>
+
+            <div class="hero-stats" role="list" aria-label="Datos destacados">
+              <div class="stat" role="listitem">
+                <div class="stat-value">120+</div>
+                <div class="stat-label">cursos</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat-value">40+</div>
+                <div class="stat-label">temas</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat-value">4.8</div>
+                <div class="stat-label">valoración</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-hidden="true">
+            <div class="hero-card-top">
+              <span class="pill">Novedad</span>
+              <span class="pill pill-soft">Insignias</span>
+            </div>
+            <div class="hero-card-body">
+              <h2 class="hero-card-title">Rutas recomendadas</h2>
+              <p class="hero-card-text">
+                Elige un objetivo y te sugerimos cursos en el orden ideal.
+              </p>
+              <ul class="hero-list">
+                <li>De 0 a React</li>
+                <li>UX para principiantes</li>
+                <li>Productividad real</li>
+              </ul>
+              <div class="hero-card-progress" aria-hidden="true">
+                <div class="progress-bar" style="--progress: 72%"></div>
+                <div class="progress-meta">
+                  <span>Progreso</span>
+                  <span>72%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="caracteristicas" aria-label="Características">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Lo que hace especial a CampusVar</p>
+            <h2 class="section-title">Aprende mejor, más rápido y con intención</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🎯</div>
+              <h3 class="feature-title">Rutas guiadas</h3>
+              <p class="feature-text">
+                Planes paso a paso con ejercicios para consolidar lo que aprendes.
+              </p>
+              <a class="feature-link" href="#cursos">Ver rutas</a>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🧠</div>
+              <h3 class="feature-title">Contenido práctico</h3>
+              <p class="feature-text">
+                Proyectos y casos reales para aplicar conceptos desde el primer día.
+              </p>
+              <a class="feature-link" href="#temas">Explorar temas</a>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🚀</div>
+              <h3 class="feature-title">Insignias y seguimiento</h3>
+              <p class="feature-text">
+                Marca tu progreso con insignias, recordatorios y objetivos semanales.
+              </p>
+              <a class="feature-link" href="#contacto">Contactar</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secciones "ancla" simples para la navegación -->
+      <section class="anchors" id="cursos" aria-label="Cursos">
+        <div class="container">
+          <div class="anchor-card">
+            <h2 class="anchor-title">Cursos con variedad</h2>
+            <p class="anchor-text">
+              Imagina una tienda con categorías como “Desarrollo”, “Diseño”, “Marketing”,
+              “Música” y “Habilidades blandas”. Aquí solo mostramos una vista de ejemplo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="anchors" id="temas" aria-label="Temas">
+        <div class="container">
+          <div class="anchor-card">
+            <h2 class="anchor-title">Temas para cada objetivo</h2>
+            <p class="anchor-text">
+              Los temas se adaptan a tu nivel: principiantes, intermedio y avanzado.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="anchors" id="contacto" aria-label="Contacto">
+        <div class="container">
+          <div class="contact-card">
+            <h2 class="anchor-title">¿Listo para empezar?</h2>
+            <p class="anchor-text">
+              Completa una inscripción (hipotética) y recibe recomendaciones personalizadas.
+            </p>
+            <form class="contact-form">
+              <label class="field">
+                <span class="field-label">Correo</span>
+                <input class="field-input" type="email" name="email" placeholder="tu@correo.com" required />
+              </label>
+              <button class="btn btn-primary" type="submit">Solicitar info</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">CV</span>
+          <div>
+            <div class="footer-title">CampusVar</div>
+            <div class="footer-text">Cursos online sobre temas variopintos.</div>
+          </div>
+        </div>
+
+        <div class="footer-links" aria-label="Enlaces">
+          <a class="footer-link" href="#cursos">Cursos</a>
+          <a class="footer-link" href="#temas">Temas</a>
+          <a class="footer-link" href="#caracteristicas">Características</a>
+          <a class="footer-link" href="#contacto">Contacto</a>
+        </div>
+
+        <div class="footer-copy">© 2026 CampusVar. Demo de landing.</div>
+      </div>
+    </footer>
+  </body>
+</html>
+
